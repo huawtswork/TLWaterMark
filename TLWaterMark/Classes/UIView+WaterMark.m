@@ -7,7 +7,7 @@
 - (WaterMarkView *)addWaterMark
 {
     CGRect frame = self.bounds;
-    WaterMarkView *markView = [[WaterMarkView alloc] initWithFrame:frame waterMarkString:@"" markViewType:kMarkViewType_Approve];
+    WaterMarkView *markView = [[WaterMarkView alloc] initWithFrame:frame waterMarkString:@"" markViewType:kMarkViewType_TwoColumn];
     [self addSubview:markView];
     return markView;
 }
