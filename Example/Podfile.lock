@@ -1,0 +1,16 @@
+PODS:
+  - TLWaterMark (1.0.0)
+
+DEPENDENCIES:
+  - TLWaterMark (from `../`)
+
+EXTERNAL SOURCES:
+  TLWaterMark:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TLWaterMark: ba6568e85fca964d33b8a6e8f17b9705837182b4
+
+PODFILE CHECKSUM: 116f4860592f6570f48a00f460d5d243a892e073
+
+COCOAPODS: 1.7.5
