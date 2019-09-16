@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TLWaterMark'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'WaterMark.'
   s.homepage         = 'https://github.com/huawtswork/TLWaterMark'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source_files = 'TLWaterMark/Classes/**/*'
   s.public_header_files = 'TLWaterMark/Classes/**/*.h'
-  s.frameworks = 'Foundation', 'UIKit'
+  s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics', 'WebKit'
 end

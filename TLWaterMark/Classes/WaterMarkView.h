@@ -5,15 +5,24 @@
 extern NSString *const kWaterMarkWebViewObserverKeyPath;
 extern NSString *const kWaterMarkScrollViewObserverKeyPath;
 
+/**
+ 水印列数类型
+ */
 typedef NS_OPTIONS(NSInteger, WaterMarkViewType) {
     kMarkVIewType_Default = 1, //全屏水印 暂时两列
     kMarkViewType_TwoColumn = 1 << 1, //最多两列水印
     kMarkViewType_Image = 1 << 2, //给图片加水印
 };
 
+/**
+ 水印控制
+ */
 @interface WaterMarkView : UIView
 
 
+/**
+ 配置默认水印
+ */
 + (void)configureWaterMark:(NSString *)waterMark;
 
 /**
@@ -33,10 +42,3 @@ typedef NS_OPTIONS(NSInteger, WaterMarkViewType) {
 
 @end
 
-@interface UIImage (FixOrientation)
-
-/**
- 修正方向
- */
-- (UIImage *)fixOrientation;
-@end

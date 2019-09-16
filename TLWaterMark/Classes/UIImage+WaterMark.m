@@ -1,5 +1,6 @@
 
 #import "UIImage+WaterMark.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 @implementation UIImage (WaterMark)
 

@@ -25,6 +25,8 @@
 		B76CFF6024BF9C90129608836C0B7606 /* WaterMarkCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F7C6D2F8AEFF5908B01A7B8CF5C7B9 /* WaterMarkCollectionView.m */; };
 		C1E7A1ACE3D068AF04C8F9DDADCB5F61 /* TLWaterMark-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B0AFAB9D9FE3CBBBFC0EFC3A2EF785 /* TLWaterMark-dummy.m */; };
 		C5AE9EBFD23D6689447DF163C6C6CB7A /* TLWaterMark-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 094BAB78F982F2490F1B805E1FD9E12B /* TLWaterMark-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8526C58232F787B00F1BE3F /* UIImage+WMOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = C8526C56232F787B00F1BE3F /* UIImage+WMOrientation.h */; };
+		C8526C59232F787B00F1BE3F /* UIImage+WMOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = C8526C57232F787B00F1BE3F /* UIImage+WMOrientation.m */; };
 		C9C7955609B7D4D6302127D05D5D5010 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		CFFEBA9A2FAB0AE2F1E418D968999E28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 		DE0B4D7FA474BB7C3F8B6E1A3989F3EA /* Pods-TLWaterMark_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F12B049DC79EB2B62D7EEA2E1C89BB /* Pods-TLWaterMark_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,9 +60,9 @@
 		26002B8966EA396B3B853F207DDDCF95 /* WaterMarkCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WaterMarkCollectionView.h; path = TLWaterMark/Classes/WaterMarkCollectionView.h; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3806F7665CF4D711FCA28B19DEF610AD /* Pods-TLWaterMark_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TLWaterMark_Tests-umbrella.h"; sourceTree = "<group>"; };
-		3DD1739EB37AD1B79CC7C2A29C4AF9DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3DD1739EB37AD1B79CC7C2A29C4AF9DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		40A0BAD8C261095D5038905E04A27373 /* UIImage+WaterMark.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+WaterMark.h"; path = "TLWaterMark/Classes/UIImage+WaterMark.h"; sourceTree = "<group>"; };
-		42AFE33657F2DF6C55BA1318B91FAC74 /* TLWaterMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TLWaterMark.framework; path = TLWaterMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AFE33657F2DF6C55BA1318B91FAC74 /* TLWaterMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TLWaterMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4396665CB03C96679B8326B1D7026C00 /* TLWaterMark-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TLWaterMark-Info.plist"; sourceTree = "<group>"; };
 		499CD41DCBFEE6E37FE3D8346001BDAF /* UIView+WaterMark.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WaterMark.m"; path = "TLWaterMark/Classes/UIView+WaterMark.m"; sourceTree = "<group>"; };
@@ -71,14 +73,14 @@
 		736A56A1BE2723B954D8A71788EF7940 /* Pods-TLWaterMark_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TLWaterMark_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		79A63EC05A3BDA5024B39CDC8B464AAB /* Pods-TLWaterMark_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TLWaterMark_Example-dummy.m"; sourceTree = "<group>"; };
 		812313E80E5993773365F398CA383D06 /* Pods-TLWaterMark_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TLWaterMark_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		83B1D969A8DA7ACC90F81F39FB7A57A2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		886E551084ABB879B37B8AA11B933887 /* TLWaterMark.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TLWaterMark.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		83B1D969A8DA7ACC90F81F39FB7A57A2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		886E551084ABB879B37B8AA11B933887 /* TLWaterMark.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TLWaterMark.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8B9E3AB861A6079B4C9100840B148D6D /* WaterMark.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WaterMark.h; path = TLWaterMark/Classes/WaterMark.h; sourceTree = "<group>"; };
 		933F428E75A99C880C409454143D903D /* TLWaterMark.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TLWaterMark.modulemap; sourceTree = "<group>"; };
-		9665BB295E885AAFF7A3E28F3753729F /* Pods_TLWaterMark_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TLWaterMark_Example.framework; path = "Pods-TLWaterMark_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9665BB295E885AAFF7A3E28F3753729F /* Pods_TLWaterMark_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TLWaterMark_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99714CB316FA2A9B51B29259043199A0 /* Pods-TLWaterMark_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TLWaterMark_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9AB38C9CEBB0035DE011B2B9469D895D /* Pods-TLWaterMark_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TLWaterMark_Example.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ADA940EFC483E36308A17FB8962328EC /* Pods-TLWaterMark_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TLWaterMark_Tests-Info.plist"; sourceTree = "<group>"; };
 		AE137F8514B8D554B36A5EB26FE8A747 /* Pods-TLWaterMark_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TLWaterMark_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AF3BB8ED8126636B06D5B904D19804BF /* Pods-TLWaterMark_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TLWaterMark_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -86,12 +88,14 @@
 		BA9074DF2C8670B73A29C7003DC0BA28 /* WaterMarkWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WaterMarkWebView.h; path = TLWaterMark/Classes/WaterMarkWebView.h; sourceTree = "<group>"; };
 		C037752C5E7AEF345CAB681ADF0FCED9 /* UIImage+WaterMark.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+WaterMark.m"; path = "TLWaterMark/Classes/UIImage+WaterMark.m"; sourceTree = "<group>"; };
 		C3923249867A64A40753614194D53E75 /* WaterMarkView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WaterMarkView.m; path = TLWaterMark/Classes/WaterMarkView.m; sourceTree = "<group>"; };
+		C8526C56232F787B00F1BE3F /* UIImage+WMOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+WMOrientation.h"; path = "TLWaterMark/Classes/UIImage+WMOrientation.h"; sourceTree = "<group>"; };
+		C8526C57232F787B00F1BE3F /* UIImage+WMOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+WMOrientation.m"; path = "TLWaterMark/Classes/UIImage+WMOrientation.m"; sourceTree = "<group>"; };
 		DA13BB881485FB1324CEBEE0E653FED9 /* WaterMarkTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WaterMarkTableView.h; path = TLWaterMark/Classes/WaterMarkTableView.h; sourceTree = "<group>"; };
 		E59837C81D2167EBD645DA49966633C0 /* Pods-TLWaterMark_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TLWaterMark_Example-Info.plist"; sourceTree = "<group>"; };
 		ECB9D10CC0EF654D00634592E0169CF8 /* Pods-TLWaterMark_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TLWaterMark_Tests.modulemap"; sourceTree = "<group>"; };
 		F247222C171C9357A080A4DAD9BD7A32 /* Pods-TLWaterMark_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TLWaterMark_Tests-dummy.m"; sourceTree = "<group>"; };
 		F3D4350A8F96EA5FCA4250B0FD872641 /* WaterMarkView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WaterMarkView.h; path = TLWaterMark/Classes/WaterMarkView.h; sourceTree = "<group>"; };
-		F5666F9AFBB9FA1E6ECB6F3C13EE3046 /* Pods_TLWaterMark_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TLWaterMark_Tests.framework; path = "Pods-TLWaterMark_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5666F9AFBB9FA1E6ECB6F3C13EE3046 /* Pods_TLWaterMark_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TLWaterMark_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BF0B338871206B2FFE14E81663FAD8 /* Pods-TLWaterMark_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TLWaterMark_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FBBF160749BEAD7C5F64B3B281F7F4F9 /* Pods-TLWaterMark_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TLWaterMark_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FF8F33CBD0C27BF8D0AB7A1B112802B4 /* TLWaterMark.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TLWaterMark.xcconfig; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 			children = (
 				40A0BAD8C261095D5038905E04A27373 /* UIImage+WaterMark.h */,
 				C037752C5E7AEF345CAB681ADF0FCED9 /* UIImage+WaterMark.m */,
+				C8526C56232F787B00F1BE3F /* UIImage+WMOrientation.h */,
+				C8526C57232F787B00F1BE3F /* UIImage+WMOrientation.m */,
 				6EA3FE3D496900D7FF05FF94ABA957EF /* UIView+WaterMark.h */,
 				499CD41DCBFEE6E37FE3D8346001BDAF /* UIView+WaterMark.m */,
 				8B9E3AB861A6079B4C9100840B148D6D /* WaterMark.h */,
@@ -269,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0B4D7FA474BB7C3F8B6E1A3989F3EA /* Pods-TLWaterMark_Example-umbrella.h in Headers */,
+				C8526C58232F787B00F1BE3F /* UIImage+WMOrientation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8526C59232F787B00F1BE3F /* UIImage+WMOrientation.m in Sources */,
 				46A952CFC1351B03781F59E4D66202C8 /* Pods-TLWaterMark_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,8 +582,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

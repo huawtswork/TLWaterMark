@@ -62,11 +62,11 @@
 		6E82F633C93EAC0831010934 /* Pods_TLWaterMark_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TLWaterMark_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71FE4B03E7148228AEE9099F /* Pods-TLWaterMark_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLWaterMark_Example.debug.xcconfig"; path = "Target Support Files/Pods-TLWaterMark_Example/Pods-TLWaterMark_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		78FB863C0F7D6242C772E8EA /* TLWaterMark.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TLWaterMark.podspec; path = ../TLWaterMark.podspec; sourceTree = "<group>"; };
+		78FB863C0F7D6242C772E8EA /* TLWaterMark.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TLWaterMark.podspec; path = ../TLWaterMark.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		97A3D6E7060AE1BB54DF5FB5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		97A3D6E7060AE1BB54DF5FB5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EB85200A8669A46668368244 /* Pods-TLWaterMark_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLWaterMark_Example.release.xcconfig"; path = "Target Support Files/Pods-TLWaterMark_Example/Pods-TLWaterMark_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EC07E48F07957796674B2603 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EC07E48F07957796674B2603 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				01CDD86E6D9103B8EEC1480A /* Pods-TLWaterMark_Tests.debug.xcconfig */,
 				56687BCE0065AAA2C9B347CF /* Pods-TLWaterMark_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

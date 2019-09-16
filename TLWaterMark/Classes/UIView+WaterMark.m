@@ -1,6 +1,7 @@
 
 #import "UIView+WaterMark.h"
 #import "WaterMarkView.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 @implementation UIView (WaterMark)
 
