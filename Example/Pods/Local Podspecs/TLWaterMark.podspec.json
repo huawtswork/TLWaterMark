@@ -1,6 +1,6 @@
 {
   "name": "TLWaterMark",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "summary": "WaterMark.",
   "homepage": "https://github.com/huawtswork/TLWaterMark",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/huawtswork/TLWaterMark.git",
-    "tag": "1.0.0"
+    "tag": "1.0.2"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,6 +21,8 @@
   "public_header_files": "TLWaterMark/Classes/**/*.h",
   "frameworks": [
     "Foundation",
-    "UIKit"
+    "UIKit",
+    "CoreGraphics",
+    "WebKit"
   ]
 }

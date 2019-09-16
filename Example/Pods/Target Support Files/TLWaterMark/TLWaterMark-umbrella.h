@@ -11,6 +11,7 @@
 #endif
 
 #import "UIImage+WaterMark.h"
+#import "UIImage+WMOrientation.h"
 #import "UIView+WaterMark.h"
 #import "WaterMark.h"
 #import "WaterMarkCollectionView.h"

@@ -1,20 +1,22 @@
 
 #import <Foundation/Foundation.h>
 
-#if __has_include(<WaterMarkSDK/WaterMark.h>)
+#if __has_include(<TLWaterMark/WaterMark.h>)
 
-FOUNDATION_EXPORT double WaterMarkSDKVersionNumber;
-FOUNDATION_EXPORT const unsigned char WaterMarkSDKVersionString[];
+FOUNDATION_EXPORT double TLWaterMarkVersionNumber;
+FOUNDATION_EXPORT const unsigned char TLWaterMarkVersionString[];
 
-#import <WaterMarkSDK/WaterMarkView.h>
-#import <WaterMarkSDK/UIImage+WaterMark.h>
-#import <WaterMarkSDK/UIView+WaterMark.h>
-#import <WaterMarkSDK/WaterMarkCollectionView.h>
-#import <WaterMarkSDK/WaterMarkTableView.h>
-#import <WaterMarkSDK/WaterMarkWebView.h>
+#import <TLWaterMark/WaterMarkView.h>
+#import <TLWaterMark/UIImage+WMOrientation.h>
+#import <TLWaterMark/UIImage+WaterMark.h>
+#import <TLWaterMark/UIView+WaterMark.h>
+#import <TLWaterMark/WaterMarkCollectionView.h>
+#import <TLWaterMark/WaterMarkTableView.h>
+#import <TLWaterMark/WaterMarkWebView.h>
 
 #else
 
+#import "UIImage+WMOrientation.h"
 #import "WaterMarkView.h"
 #import "UIImage+WaterMark.h"
 #import "UIView+WaterMark.h"
