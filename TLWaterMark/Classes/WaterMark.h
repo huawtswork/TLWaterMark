@@ -10,7 +10,6 @@ FOUNDATION_EXPORT const unsigned char TLWaterMarkVersionString[];
 #import <TLWaterMark/UIImage+WMOrientation.h>
 #import <TLWaterMark/UIImage+WaterMark.h>
 #import <TLWaterMark/UIView+WaterMark.h>
-#import <TLWaterMark/WKWebView+WaterMark.h>
 #import <TLWaterMark/WaterMarkCollectionView.h>
 #import <TLWaterMark/WaterMarkTableView.h>
 #import <TLWaterMark/WaterMarkWebView.h>
@@ -24,7 +23,6 @@ FOUNDATION_EXPORT const unsigned char TLWaterMarkVersionString[];
 #import "WaterMarkCollectionView.h"
 #import "WaterMarkTableView.h"
 #import "WaterMarkWebView.h"
-#import "WKWebView+WaterMark.h"
 
 #endif
 

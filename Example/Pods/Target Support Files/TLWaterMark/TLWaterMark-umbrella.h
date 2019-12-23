@@ -18,7 +18,6 @@
 #import "WaterMarkTableView.h"
 #import "WaterMarkView.h"
 #import "WaterMarkWebView.h"
-#import "WKWebView+WaterMark.h"
 
 FOUNDATION_EXPORT double TLWaterMarkVersionNumber;
 FOUNDATION_EXPORT const unsigned char TLWaterMarkVersionString[];
