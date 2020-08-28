@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TLWaterMark'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'WaterMark.'
   s.homepage         = 'https://github.com/huawtswork/TLWaterMark'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

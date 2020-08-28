@@ -1,6 +1,7 @@
 
 #import "WaterMarkView.h"
 #import "UIImage+WaterMark.h"
+#import <WebKit/WebKit.h>
 
 NSString *const kWaterMarkWebViewObserverKeyPath = @"scrollView.contentSize";
 NSString *const kWaterMarkScrollViewObserverKeyPath = @"contentSize";
@@ -47,7 +48,7 @@ static NSString *kConfiguredDefaultWaterMark = @"";
         
         [self layoutIfNeeded];
     }else if ([keyPath isEqualToString:kWaterMarkWebViewObserverKeyPath]) {
-        UIScrollView *scrollView = ((UIWebView*)object).scrollView;
+        UIScrollView *scrollView = ((WKWebView*)object).scrollView;
         
         if (scrollView.frame.size.height > scrollView.contentSize.height) {
             if (CGSizeEqualToSize(self.frame.size, scrollView.frame.size)) {

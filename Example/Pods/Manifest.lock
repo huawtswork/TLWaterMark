@@ -1,5 +1,5 @@
 PODS:
-  - TLWaterMark (1.0.6)
+  - TLWaterMark (1.0.7)
 
 DEPENDENCIES:
   - TLWaterMark (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TLWaterMark: 71357da4169aaf223ec15bc4c3fe6040dfa1a0c8
+  TLWaterMark: f4f6ad5196f3586ec0cb8770a2cc3eae82de2d7c
 
 PODFILE CHECKSUM: 116f4860592f6570f48a00f460d5d243a892e073
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
